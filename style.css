@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  transition: 2s;
+}
+
+#header {
+  background-image: url('file:///e://club mathematica/img/img0.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* width: 100vw; */
+}
+
+#header-mask {
+  background-color: rgba(0,0,0,0.7);
+  height: 100vh;
+  color: white;
+}
+
+#header-mask > h2 {
+  line-height: 94vh;
+  margin: 0;
+  padding: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 4em;
+  opacity: 0.7;
+}
+
+#menu {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  height: 6vh;
+
+}
+
+.menu-fix {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#menu > div {
+  width: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  border-right: 3px solid;
+  line-height: 6vh;
+}
+
+#menu>div:nth-child(2),#menu>div:nth-child(3),#menu>div:nth-child(5) {
+  border: none
+}
+
+#content {
+  height: 200vh;
+  background-color: cornflowerblue;
+}
