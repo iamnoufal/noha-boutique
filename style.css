@@ -11,7 +11,8 @@ body {
 #header {
   background-image: url('img0.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: bottom;
   height: 100vh;
   /* width: 100vw; */
 }
@@ -23,12 +24,12 @@ body {
 }
 
 #header-mask > h2 {
-  line-height: 94vh;
+  line-height: 90vh;
   margin: 0;
   padding: 0;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  font-size: 8vw;
+  font-size: 10vw;
   opacity: 0.7;
 }
 
@@ -36,30 +37,43 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  height: 6vh;
-
+  height: 10vh;
 }
 
 .menu-fix {
   position: fixed;
   width: 100%;
   top: 0;
+  height: 10vh;
+  background-image: url("img0.jpeg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.menu-fix > div {
+  background-color: rgba(0,0,0,0.7);
+  line-height: 10vh;
 }
 
 #menu > div {
   width: 100%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  font-size: 1.5rem;
-  border-right: 3px solid;
-  line-height: 6vh;
+  font-size: 2vw;
+  /* border-right: 3px solid; */
+  line-height: 10vh;
 }
 
-#menu>div:nth-child(2),#menu>div:nth-child(3),#menu>div:nth-child(5) {
+/* #menu>div:nth-child(2),#menu>div:nth-child(3),#menu>div:nth-child(5) {
   border: none
-}
+} */
 
 #content {
   height: 200vh;
   background-color: cornflowerblue;
+}
+
+#icon {
+  line-height: 10vh;
 }
